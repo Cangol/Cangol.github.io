@@ -4,11 +4,11 @@ title: Android project format
 date: '2013-12-07'
 ---
 
-再次规范Android App项目使用的相关Java代码、xml文件、其他资源文件、样式、id、vcs工具的规范，已统一风格，提高可读性.
+再次规范Android App项目使用的相关Java代码、xml文件、其他资源文件、样式、id、vcs工具的规范.
 
+已统一风格，提高可读性.
 
-
-
+以 “模块_组件_功能_类别_状态”为核心                                                                                        
 
 
 ##res资源命名规范
