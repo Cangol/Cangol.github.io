@@ -7,9 +7,9 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Chris Banes
-description:      'I work as a DPE in the Android Developer Relations team. This is my personal blog and any views expressed here are mine, and not my employers.'
-url:              http://chris.banes.me
+title:            Cangol
+description:      'Can go anywhere, if i want to'
+url:              http://cangol.mobi
 baseurl:          /
 logo:             /content/images/me.jpg
 
@@ -19,10 +19,10 @@ author:
 
 paginate:         5
 
-disqus_shortname: chrisbanes
+disqus_shortname: Cangol
 
 github:
-  repo:           https://github.com/chrisbanes/chrisbanes.github.io
+  repo:           https://github.com/Cangol
 
 gems:
   - jekyll-sitemap
