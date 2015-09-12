@@ -4,21 +4,21 @@ title: make android apk
 date: 2013-04-08
 ---
 
-生成R.java
+生成R.java   
 `aapt p -f -m -J gen -S res -I D:\dev\android-sdk\platforms\android-17\android.jar -M AndroidManifest.xml`
 
 .aidl转成.java文件
 
-编译class 包括R.java
+编译class 包括R.java   
 `javac -classpath D:\dev\android-sdk\platforms\android-17\android.jar;libs\zxing-core.jar -d bin\classes src\mobi\cangol\qrcode\*.java gen\mobi\cangol\qrcode\R.java`
 
-class文件转dex
+class文件转dex    
 `dx --dex --output=D:\workspace\QRcode\bin\classes.dex D:\workspace\QRcode\bin;D:\workspace\QRcode\libs\zxing-core.jar`
 
-生成apk
+生成apk    
 `aapt p -f -F bin\QRcode.apk -v -u -z -M AndroidManifest.xml -S res -A assets -I D:\dev\android-sdk\platforms\android-17\android.jar`
 
-添加classes.dex 到apk (cd bin)
+添加classes.dex 到apk (cd bin)   
 `aapt add QRcode.apk classes.dex`
 
 apk签名  
