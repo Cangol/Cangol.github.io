@@ -1,7 +1,7 @@
 ---
-layout post
-title make android apk
-date 2013-04-08
+layout: post
+title: make android apk
+date: 2013-04-08
 ---
 
 生成R.java
