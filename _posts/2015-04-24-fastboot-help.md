@@ -1,3 +1,9 @@
+---
+layout: post
+title: fastboot help
+date: '2015-04-24'
+---
+
 刷写gpt分区   
 `fastboot flash partition gpt.bin`
 

@@ -1,3 +1,8 @@
+---
+layout: post
+title: tcpdump help
+date: '2012-11-12'
+---
 
 开始抓包  
 `/data/local/tcpdump -p -vv -s 0 -w /sdcard/capture.pcap`
