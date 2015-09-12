@@ -2,6 +2,7 @@
 layout: post
 title: make android apk
 date: 2013-04-08
+category: android
 ---
 
 生成R.java   

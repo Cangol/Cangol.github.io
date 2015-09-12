@@ -2,6 +2,8 @@
 layout: post
 title: tcpdump help
 date: '2012-11-12'
+category: android
+tags: [tcpdump]
 ---
 
 开始抓包  

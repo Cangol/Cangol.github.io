@@ -2,6 +2,7 @@
 layout: post
 title: Android project format
 date: '2013-12-07'
+category: android
 ---
 优秀的代码，甚至可以不需要注释。项目开发，特别是协同和开源，代码一定要规范，已提高可读性。  
 我们坚信：约束优于配置。  

@@ -2,6 +2,8 @@
 layout: post
 title: fastboot help
 date: '2015-04-24'
+cateory: rom
+tags: [android,moto]
 ---
 
 刷写gpt分区   
