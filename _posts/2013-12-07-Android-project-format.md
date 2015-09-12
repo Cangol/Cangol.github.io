@@ -3,12 +3,12 @@ layout: post
 title: Android project format
 date: '2013-12-07'
 ---
-
-再次规范Android App项目使用的相关Java代码、xml文件、其他资源文件、样式、id、vcs工具的规范.
-
-已统一风格，提高可读性.
-
-以 “模块_组件_功能_类别_状态”为核心                                                                                        
+优秀的代码，甚至可以不需要注释。项目开发，特别是协同和开源，代码一定要规范，已提高可读性。  
+我们坚信：约束优于配置。  
+以下列出我们的Android App项目代码基本规范(欢迎指正，仅供参考)    
+包括：Java代码、
+资源文件命名规范（color、drawable、string、id、style）、vcs工具（svn和git）的注释规范.
+                                                                                     
 
 
 ##res资源命名规范
