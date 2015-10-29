@@ -11,7 +11,7 @@ category: android
 在app的AndroidManifest.xml中定义一个Placeholder。  
 value中的“\” 用来将value中的数字转换为字符串（类似excel中“’”的功能）
 
-	<meta-data android:name="CHANNEL_ID" android:value="\ ${CHANNEL_ID_VALUE}"></meta-data>   
+	<meta-data android:name="CHANNEL_ID" android:value="\ ${CHANNEL_ID_VALUE}"/>
 代码中的获取方式
 
 	 public static String getChannnel(Context context) {
