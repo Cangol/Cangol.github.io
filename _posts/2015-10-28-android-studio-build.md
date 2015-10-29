@@ -50,9 +50,9 @@ value中的“\” 用来将value中的数字转换为字符串（类似excel中
 * 方法二
 
 		 productFlavors {
-		 	baidu
-		 	google
-		 	qq
+		 	baidu{}
+		 	google{}
+		 	qq{}
 		 }
 		 productFlavors.all { flavor ->
 		    flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
@@ -122,5 +122,57 @@ value中的“\” 用来将value中的数字转换为字符串（类似excel中
 			           keyPassword ${app_keystore_keypassword}
 			        }
 			}
+
+##格式化输出apk
+
+		 applicationVariants.all { variant ->
+		            variant.outputs.each { output ->
+		                def outputFile = output.outputFile
+		                if (outputFile != null && outputFile.name.endsWith('.apk')) {
+		                    def fileName = "${app_name}_v${defaultConfig.versionName}_${releaseVersionSvn())_${releaseTime()}_${variant.productFlavors[0].name}.apk"
+		                    output.outputFile = new File(outputFile.parent, fileName)
+		                }
+		            }
+		        }
+以下提供一些APK文件命名的模板参数的相关获取方法    
+*  获取当前时间
+
+		def releaseTime() {
+		    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+		}
+*  获取svn版本号
+
+		def releaseVersionSvn(){
+		    Process p="svn info --xml --incremental".execute()
+		    def version=p.text
+		    p.destroy()
+		    def m=version =~ '.*revision=\"(.*?)\"'
+		    if(m.find()){
+		        return m.group(1);
+		    }else{
+		        return null
+		    }
+		}
+*  获取git版本号
+
+		def releaseVersionGit(){
+		    Process p="git stash".execute()
+		    def version=p.text
+		    p.destroy()
+		    def m=version =~ '.*at (.*?) '
+		    if(m.find()){
+		        return m.group(1);
+		    }else{
+		        return null
+		    }
+		}
+*  获取git序号（git的提交次数号）
+
+		def releaseVersionGitNo(){
+		    Process p="git rev-list --all|wc -l".execute()
+		    def version=p.text
+		    p.destroy()
+		    return version;
+		}
 
 
