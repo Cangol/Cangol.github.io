@@ -57,7 +57,9 @@ value中的“\” 用来将value中的数字转换为字符串（类似excel中
 	key.alias.password=******
 	app.name=APP
 	app.version=1.0.0
-	app.svnv=r1001
+	
+	output.dir=D:\build
+	ant-contrib.dir=D:/dev/ant-contrib-1.0b2.jar
 
 修改或新建custom_rules.xml，内容如下
 
@@ -92,7 +94,7 @@ value中的“\” 用来将value中的数字转换为字符串（类似excel中
 	    <!-- ************************* build_copyto ************************ -->
 	    <target name="build_copyto" depends="build_all">
 	        <property file="ant.properties"/>
-	        <delete dir="D:\build" includeEmptyDirs="true" includes="${app.name}-${app.version}-*"/>
+	        <delete dir="${output.dir}" includeEmptyDirs="true" includes="${app.name}-${app.version}-*"/>
 	        <copy todir="D:\build" verbose="true">
 	            <fileset dir="bin" >
 	                <include name="${app.name}-${app.version}-*-release.apk" />
@@ -116,7 +118,7 @@ value中的“\” 用来将value中的数字转换为字符串（类似excel中
 	   </target>
 	    <!-- ************************* build_all ************************ -->
 	   <target name="build_all">
-		   <property name="ant-contrib.jar" location="D:/dev/ant-contrib-1.0b2.jar" />
+		   <property name="ant-contrib.jar" location="${ant-contrib.dir}" />
 		   <taskdef resource="net/sf/antcontrib/antcontrib.properties" classpath="${ant-contrib.jar}" />
 		   <loadfile property="ids" srcFile="channel.txt">
 			        <filterchain> 
@@ -135,6 +137,7 @@ value中的“\” 用来将value中的数字转换为字符串（类似excel中
 	   </target>
 	</project>
 
-ant需要依赖的包ant-contrib-1.0b2.jar，请自行下载
+ant需要依赖的包ant-contrib-1.0b2.jar，请自行下载,并配置到classpath
+[ant-contrib](http://sourceforge.net/projects/ant-contrib/)
 ##执行打包
 最后ant运行build_all.xml文件,即可进行多渠道打包
