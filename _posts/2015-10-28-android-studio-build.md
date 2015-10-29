@@ -28,11 +28,11 @@ value中的“\” 用来将value中的数字转换为字符串（类似excel中
 ##定义默认渠道
 添加在app的build.gradle文件 android块中	 
 
-		defaultConfig {
-			 //其他省略
-	       //默认是的渠道
-	       manifestPlaceholders = [CHANNEL_ID_VALUE: "test"]
-	    }
+	defaultConfig {
+		 //其他省略
+       //默认是的渠道
+       manifestPlaceholders = [CHANNEL_ID_VALUE: "test"]
+    }
 ##定义多个渠道
 * 方法一
 
@@ -125,17 +125,18 @@ value中的“\” 用来将value中的数字转换为字符串（类似excel中
 
 ##格式化输出apk
 
-		 applicationVariants.all { variant ->
-		            variant.outputs.each { output ->
-		                def outputFile = output.outputFile
-		                if (outputFile != null && outputFile.name.endsWith('.apk')) {
-		                    def fileName = "${app_name}_v${defaultConfig.versionName}_${releaseVersionSvn())_${releaseTime()}_${variant.productFlavors[0].name}.apk"
-		                    output.outputFile = new File(outputFile.parent, fileName)
-		                }
-		            }
-		        }
-以下提供一些APK文件命名的模板参数的相关获取方法    
-*  获取当前时间
+	 applicationVariants.all { variant ->
+	            variant.outputs.each { output ->
+	                def outputFile = output.outputFile
+	                if (outputFile != null && outputFile.name.endsWith('.apk')) {
+	                    def fileName = "${app_name}_v${defaultConfig.versionName}_${releaseVersionSvn())_${releaseTime()}_${variant.productFlavors[0].name}.apk"
+	                    output.outputFile = new File(outputFile.parent, fileName)
+	                }
+	            }
+	        }
+以下提供一些APK文件命名的模板参数的相关获取方法
+  
+*   获取当前时间
 
 		def releaseTime() {
 		    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
