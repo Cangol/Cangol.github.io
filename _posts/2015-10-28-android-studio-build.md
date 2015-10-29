@@ -1,4 +1,11 @@
-#android stuidio 使用gradle 编译打包
+---
+layout: post
+title: android studio gradle build
+date: 2015-10-28
+category: android
+---
+
+#android studio 使用gradle 多渠道编译打包
 -
 ##定义Placeholder
 在app的AndroidManifest.xml中定义一个Placeholder。  
