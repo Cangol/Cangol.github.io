@@ -5,6 +5,7 @@ date: 2015-10-28
 category: android
 ---
 
+适用于android studio打包，此种打包方式还是不够快，更快的方式还在研发中，敬请期待
 
 ##定义Placeholder
 在app的AndroidManifest.xml中定义一个Placeholder。  
