@@ -88,7 +88,7 @@ value中的“\” 用来将value中的数字转换为字符串（类似excel中
 	gradle.properties文件设置
 	
 		app_channels=baidu,google,qq  
-##证书可签名
+##证书和签名
 添加在app的build.gradle文件 android块中	  
 *  方法一  
 	直接写入
