@@ -116,10 +116,10 @@ value中的“\” 用来将value中的数字转换为字符串（类似excel中
 
 		signingConfigs {
 				    release {
-			           storeFile ${app_keystore_filepath}
-			           storePassword ${app_keystore_password}
-			           keyAlias ${app_keystore_alias}
-			           keyPassword ${app_keystore_keypassword}
+			           storeFile file("${app_keystore_filepath}")
+			           storePassword "${app_keystore_password}"
+			           keyAlias "${app_keystore_alias}"
+			           keyPassword "${app_keystore_keypassword}"
 			        }
 			}
 
