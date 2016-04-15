@@ -2,7 +2,7 @@
 layout: post
 title: git help
 date: '2015-09-12'
-cateory: rom
+cateory: git
 tags: [git,github]
 ---
 
