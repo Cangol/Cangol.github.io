@@ -1,7 +1,7 @@
 ---
 layout: post
 title: git help
-date: '2015-09-12'
+date: '2015-12-12'
 cateory: android
 tags: [git,github]
 ---
