@@ -5,6 +5,7 @@ date: '2015-09-12'
 cateory: rom
 tags: [git,github]
 ---
+
 ##说明
 >	git 是一个很好的项目协作工具，大多数开源项目已经摒弃svn，使用git，github作为目前最流行的开源code社区，更是容纳了巨多的好项目。掌握git和github的使用，是一个程序员的必要技能。
 
