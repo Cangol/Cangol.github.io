@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android多渠道打包:gradle
+title: Android 多渠道打包:gradle
 date: 2015-10-28
 category: android
 ---
