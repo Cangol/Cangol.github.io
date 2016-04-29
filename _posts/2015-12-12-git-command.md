@@ -43,6 +43,3 @@ tags: [git,github]
 
 发布所有tag:  
 `$ git push origin –tags`
-	
-
-
