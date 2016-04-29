@@ -10,6 +10,7 @@ tags: [android,singleton]
 >    在android项目中，我们经常会需要用到一些singleton模式，除了java中常用的单例模式的写法，这里提出一种非静态的单例模式，而且还带有android的生命周期，生命收起跟随application而变化
 
 * 创建一个这样的单例类(是不是和java的单利模式很像)  
+
         public class Singleton {
             private Singleton(Application application) {
                 this.application = application;
@@ -37,6 +38,7 @@ tags: [android,singleton]
         }
     
 * 在application 中这样写
+
         public class MyApplication extends Application {
             private Singleton singleton;
         
@@ -79,6 +81,7 @@ tags: [android,singleton]
         }
     
 * 配置mainfest
+
           <application
                 android:name=".MyApplication"
             
