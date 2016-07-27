@@ -16,9 +16,9 @@ tags: [gradle]
         //.....
          assembleRelease.doLast{
             //apk文件名称
-            def fileName = "${app_name}_${defaultConfig.versionName}" +
-                    "_build${defaultConfig.versionCode}_r${releaseVersionGit()}_${releaseTime()}_release.apk"
-            File outFile = new File("${project.buildDir}/outputs/apk", fileName)
+            def fileName = "app-release-signed-apk"
+            File outFile = new File("${project.buildDir}/outputs/apk",
+            fileName)
             def folder="V${app_version_name}/"
             uploadToSmb(outFile,folder)
             //uploadToHttpServer(outFile,url)
@@ -55,7 +55,8 @@ tags: [gradle]
             def client = new DefaultHttpClient()
             def post = new HttpPost("${url}");
             def entity = new MultipartEntity()
-            def fileBody = new FileBody(file, "application/vnd.android.package-archive", file.name)
+            def fileBody = new FileBody(file,
+            "application/vnd.android.package-archive", file.name)
             entity.addPart("file", fileBody)
             post.entity = entity
     
