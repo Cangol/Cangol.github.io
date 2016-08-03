@@ -5,17 +5,16 @@ date: '2013-08-27'
 cateory: android
 tags: [android,appcore]
 ---
-#Cangol-appcore
-
-
+##说明
+这是一个Android 应用核心库，将应用的常用功能模块化，以便提高开发效率。
+[详细文档](http://cangol.github.io/Cangol-appcore)
+  
+##status
 
 [![Download](https://api.bintray.com/packages/cangol/maven/Cangol-appcore/images/download.svg) ](https://bintray.com/cangol/maven/Cangol-appcore/_latestVersion)
 [![Build Status](https://travis-ci.org/Cangol/Cangol-appcore.svg?branch=master)](https://travis-ci.org/Cangol/Cangol-appcore)
 [![codecov](https://codecov.io/gh/Cangol/Cangol-appcore/branch/master/graph/badge.svg)](https://codecov.io/gh/Cangol/Cangol-appcore)
 [![Join the chat at https://gitter.im/Cangol/Cangol-appcore](https://badges.gitter.im/Cangol/Cangol-appcore.svg)](https://gitter.im/Cangol/Cangol-appcore?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-这是一个Android 应用核心库，将应用的常用功能模块化，以便提高开发效率。
-[详细文档](http://cangol.github.io/Cangol-appcore)  
 
 ####QQ Group: 515488807
 
