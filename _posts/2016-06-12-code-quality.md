@@ -1,3 +1,11 @@
+---
+layout: post
+	title: code-quality
+date: '2016-06-12'
+cateory: gradle
+tags: [gradle]
+---
+
 #如何编写高质量代码（Code Quality） 
 
 	如何编写高质量高规格的代码，一直是我们大多数程序员的追求之一。   
