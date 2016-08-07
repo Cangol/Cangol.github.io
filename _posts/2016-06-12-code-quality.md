@@ -1,6 +1,6 @@
 ---
 layout: post
-	title: code-quality
+title: code-quality
 date: '2016-06-12'
 cateory: gradle
 tags: [gradle]
