@@ -2,12 +2,8 @@
 markdown:         redcarpet
 highlighter:      pygments
 redcarpet:
-<<<<<<< HEAD
-    extensions: [ "fenced_code_blocks", "hard_wrap","autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify","no_intra_emphasis"]
+extensions: [ "fenced_code_blocks", "hard_wrap","autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify","no_intra_emphasis"]
 
-=======
-  extensions: [ "fenced_code_blocks", "hard_wrap","autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify","no_intra_emphasis"]
->>>>>>> 3eabe6bd05cdcc229d165444f51198041e83eac9
 # Permalinks
 permalink:        pretty
 
