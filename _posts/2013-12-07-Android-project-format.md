@@ -13,19 +13,19 @@ category: android
                                                                                      
 
 
-##res资源命名规范
+## res资源命名规范
 不分模块的项目无“模块”前缀，不强调通用资源的项目无“模块”前缀
 
     标准： 模块_组件_功能_类别_状态
 
-###color selector
+### color selector
     模块_组件_类别_状态
-###drawable selector
+### drawable selector
     模块_组件_功能_类别_状态
-###string
+### string
     模块_功能_类别_状态
     
-###layout 命名规范
+### layout 命名规范
     模块_功能_类别_状态
     activity_功能_状态
     fragment_功能_状态
@@ -37,17 +37,17 @@ category: android
     tabview_item_功能_状态
     gallery_item_功能_状态
     
-###id
+### id
     模块_组件_功能_类别_状态
     textview_name_red_disable
     imageview_name_red_default
     
-###style
+### style
     模块_组件_功能.类别.状态
     TextView_Menu.White
     
 ## Java
-###包名及类
+### 包名及类
     com.company.app.模块.activity
         activity类
     com.company.app.模块.fragment
