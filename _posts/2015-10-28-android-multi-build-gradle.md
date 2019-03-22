@@ -7,7 +7,7 @@ category: android
 
 适用于gradle打包，此种打包方式还是不够快，更快的方式还在研发中，敬请期待
 
-##定义Placeholder
+## 定义Placeholder
 在app的AndroidManifest.xml中定义一个Placeholder。  
 value中的“\” 用来将value中的数字转换为字符串（类似excel中“’”的功能）
 
@@ -25,7 +25,7 @@ value中的“\” 用来将value中的数字转换为字符串（类似excel中
 	        }
 	        return channel;
 	 }
-##定义默认渠道
+## 定义默认渠道
 添加在app的build.gradle文件 android块中	 
 
 	defaultConfig {
@@ -33,7 +33,7 @@ value中的“\” 用来将value中的数字转换为字符串（类似excel中
        //默认是的渠道
        manifestPlaceholders = [CHANNEL_ID_VALUE: "test"]
     }
-##定义多个渠道
+## 定义多个渠道
 * 方法一
 
 		 productFlavors {
@@ -88,7 +88,7 @@ value中的“\” 用来将value中的数字转换为字符串（类似excel中
 	gradle.properties文件设置
 	
 		app_channels=baidu,google,qq  
-##证书和签名
+## 证书和签名
 添加在app的build.gradle文件 android块中	  
 *  方法一  
 	直接写入
@@ -123,7 +123,7 @@ value中的“\” 用来将value中的数字转换为字符串（类似excel中
 			        }
 			}
 
-##格式化输出apk
+## 格式化输出apk
 
 	 applicationVariants.all { variant ->
 	            variant.outputs.each { output ->
