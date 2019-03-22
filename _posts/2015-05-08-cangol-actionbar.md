@@ -14,7 +14,7 @@ An android library,custom simple actionbar
 [![Build Status](https://travis-ci.org/Cangol/Cangol-actionbar.svg?branch=master)](https://travis-ci.org/Cangol/Cangol-actionbar)
 [![Coverage Status](https://coveralls.io/repos/github/Cangol/Cangol-actionbar/badge.svg?branch=master)](https://coveralls.io/github/Cangol/Cangol-actionbar?branch=master)
 [![Gitter](https://badges.gitter.im/Cangol/Cangol-actionbar.svg)](https://gitter.im/Cangol/Cangol-actionbar?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-###Usage
+### Usage
 -
 Maven
 
@@ -28,14 +28,14 @@ Gradle
  
     compile 'mobi.cangol.mobile:actionbar:1.0.1@aar'
 
-###Screenshot
+### Screenshot
 -
 
 ![Screenshot](https://github.com/Cangol/Cangol-actionbar/raw/master/art/device-screenshot-0.png?raw=true)
 ![Screenshot](https://github.com/Cangol/Cangol-actionbar/raw/master/art/device-screenshot-1.png?raw=true)
 ![Screenshot](https://github.com/Cangol/Cangol-actionbar/raw/master/art/device-screenshot-2.png?raw=true)
 
-###Documentation
+### Documentation
 -
 [Wiki] (https://github.com/Cangol/Cangol-actionbar/wiki)  
 
@@ -46,7 +46,7 @@ Gradle
 *   [ActionTab] (https://github.com/Cangol/Cangol-actionbar/wiki/Usage-ActionTab)  
 *   [ListNavigation] (https://github.com/Cangol/Cangol-actionbar/wiki/Usage-ListNavigation)  
 
-###License
+### License
 
     Copyright (c) 2011-2015 Cangol
 
