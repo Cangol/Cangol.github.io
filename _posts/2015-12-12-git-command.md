@@ -6,10 +6,10 @@ cateory: android
 tags: [git,github]
 ---
 
-##说明
+## 说明
 >	git 是一个很好的项目协作工具，大多数开源项目已经摒弃svn，使用git，github作为目前最流行的开源code社区，更是容纳了巨多的好项目。掌握git和github的使用，是一个程序员的必要技能。
 
-##基本操作
+## 基本操作
 克隆远程git地址  
 `$git clone url`
 
@@ -21,7 +21,7 @@ tags: [git,github]
 
 发布本地git仓库的内容到远程仓库   
 `$git push ` 
-##tag  
+## tag  
 
 显示所有tag:   
 `$ git tag` 
