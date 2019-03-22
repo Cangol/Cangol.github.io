@@ -6,7 +6,7 @@ cateory: gradle
 tags: [gradle]
 ---
 
-#如何编写高质量代码（Code Quality） 
+# 如何编写高质量代码（Code Quality） 
 
 	如何编写高质量高规格的代码，一直是我们大多数程序员的追求之一。   
 	编写高质量代码：以减少代码的警告和错误，提高代码的易用性和安全性。
@@ -15,14 +15,14 @@ tags: [gradle]
 	那如何编写高质量代码呢？我们除了自我规范，还可以借助工具Code Quality的三剑客：    
 	checkstyle,findbugs,pmd等，还其他一些工具，这里只介绍这三种。
 	
-##checkstyle
+## checkstyle
 检查代码是否符合规范，有很多个大公司的规范模板，可以自行搜索
 
-##findbugs
+## findbugs
 一个静态分析工具，它检查类或者 JAR 文件，将字节码与一组缺陷模式进行对比以发现可能的问题。     
 即依据bug patterns检测代码中存在的bug
 
-##pmd
+## pmd
 * 潜在的bug：空的try/catch/finally/switch语句
 * 未使用的代码：未使用的局部变量、参数、私有方法等
 * 可选的代码：String/StringBuffer的滥用
@@ -31,7 +31,7 @@ tags: [gradle]
 * 循环体创建新对象：尽量不要再for或while循环体内实例化一个新对象
 * 资源关闭：Connect，Result，Statement等使用之后确保关闭掉
 
-##集成使用
+## 集成使用
 gralde 中已集成了checkstyle，findbugs，pmd。只需要很简单的配置就可以在项目中使用
 
 引入相关插件
