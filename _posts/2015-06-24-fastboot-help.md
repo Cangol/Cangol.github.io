@@ -28,10 +28,8 @@ tags: [android,moto]
 刷写sdi分区（和基带有关的）   
 `fastboot flash sdi sdi.mbn`
 
-
 刷写motoboot镜像：（这个是bootloader的组合镜像包，简称BL，最好不要乱刷！这个只能升级不能降级这个必须与gpt版本一致才能刷进去，。并且刷这个容易变砖！）
 `fastboot flash motoboot motoboot.`
-
 
 刷写data分区：（用于清空data分区等）  
 `fastboot flash userdata userdata.img`
@@ -43,7 +41,6 @@ fastboot erase <要清空的分区名>
 清空data分区：（此命令会清除data、sdcard两个分区，如果内置存储有重要的东西，不要用此命令，请在第三方recovery中进行WIPE操作）   
 `fastboot erase userdata`
 
-
 清空cache分区  
 `fastboot erase cache`
 
@@ -53,14 +50,11 @@ fastboot erase <要清空的分区名>
 清空modemst1 ：（基带缓存分区，两个分区互补加密，破解3G其实就是改的这两个分区）    
 `fastboot erase modemst1`
 
-
 清空 modemst2   
 `fastboot erase modemst2`
 
-
 清空clogo ：（自定义开机第一屏，官方推送开机动画和定制开机标语的，改的就是这个分区）  
 `fastboot erase clogo`
-
 
 清空data、cache、sdcard 三个分区  
 `fastboot -w`
@@ -82,7 +76,6 @@ fastboot erase <要清空的分区名>
 
 获取手机的全部信息    
 `fastboot getvar all`
-
 
 引导启动外部镜像  
 `fastboot boot xxxxxx.img`
