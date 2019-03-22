@@ -6,12 +6,13 @@ cateory: android
 tags: [gradle]
 ---
 
-##说明
->	使用android studio 打包或产生渠道包,现在已经很普及,但是打包后还要自行拷贝apk，到发布目录.对于这点繁杂的无脑工作，我们要实现自动化上传发布,解放程序员,解放程序员。接下来看看我们怎么实现。
+## 说明
+使用android studio 打包或产生渠道包,现在已经很普及,但是打包后还要自行拷贝apk，到发布目录.对于这点繁杂的无脑工作，我们要实现自动化上传发布,解放程序员,解放程序员。接下来看看我们怎么实现。
 
 首先我们要执行gradle assembleRelease打包，然后再后将apk上传到共享或httpserver服务器上。
 那如何一气呵成 打包到上传自动话呢，我们可以这样
-###doLast方式
+
+### doLast方式
     android {
         //.....
          assembleRelease.doLast{
@@ -24,7 +25,8 @@ tags: [gradle]
             //uploadToHttpServer(outFile,url)
         }
     }
-###上传到共享
+
+### 上传到共享
     def uploadToSmb(File file,String folder){
         Process p="git version".execute()
         def os_version=p.text
@@ -49,7 +51,7 @@ tags: [gradle]
             logger.error("uploaded "+destination.getAbsolutePath())
         }
     }
-###上传到http server
+### 上传到http server
     def uploadToHttpServer(File file, String url){
         if(url != null && !url.isEmpty()){
             def client = new DefaultHttpClient()
