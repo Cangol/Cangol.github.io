@@ -7,7 +7,7 @@ category: android
 
 ant打包适用于eclipse等情况
 
-##修改AndroidManifest
+## 修改AndroidManifest
 app的AndroidManifest.xml中定义一个meta-data “CHANNEL_ID”
 value中的“\” 用来将value中的数字转换为字符串（类似excel中“’”的功能）
 
@@ -28,12 +28,12 @@ value中的“\” 用来将value中的数字转换为字符串（类似excel中
 	 }
 
     }
-##定义多个渠道
+## 定义多个渠道
 
 项目根目录下新建channel.txt，内容如下，多个渠道用逗号隔开
 
 	testa,weba,baidu
-##生成build文件
+## 生成build文件
 在项目根目录下执行，会生成了这些文件（build.xml,ant.properties,custom_rules.xml）
 
 	ant android project update
@@ -139,5 +139,5 @@ value中的“\” 用来将value中的数字转换为字符串（类似excel中
 
 ant需要依赖的包ant-contrib-1.0b2.jar，请自行下载,并配置到classpath
 [ant-contrib](http://sourceforge.net/projects/ant-contrib/)
-##执行打包
+## 执行打包
 最后ant运行build_all.xml文件,即可进行多渠道打包
